@@ -47,3 +47,7 @@ class polynomial:
         else:
             self.coeff *= some.coeff
             return self
+
+    def div(self, some):
+        self.coeff /= some
+        return self
