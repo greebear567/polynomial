@@ -1,4 +1,3 @@
-import numpy
 import numpy as np
 
 
@@ -7,7 +6,7 @@ class polynomial:
         self.coeff = np.array(a)
         self.power = len(self.coeff) - 1
 
-    def enlarger_of_power(self: numpy.ndarray, big_power):
+    def enlarger_of_power(self: np.ndarray, big_power):
         while len(self) < big_power:
             self = np.append(self, 0)
         return self
